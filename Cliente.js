@@ -2,7 +2,8 @@ class Cliente extends Persona {
 
     static contadorClientes = 0;
 
-    constructor(fechaRegistro) {
+    constructor(nombre, apellido, edad, fechaRegistro) {
+        super (nombre, apellido, edad);
         this._idCliente = ++ Cliente.contadorClientes;
         this._fechaRegistro = fechaRegistro;
     }
